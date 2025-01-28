@@ -10,7 +10,6 @@
   "license": "ISC",
   "description": "A blog management application",
   "dependencies": {
-    "crash-course": "file:",
     "ejs": "^3.1.10",
     "express": "^4.21.0",
     "lodash": "^4.17.21",

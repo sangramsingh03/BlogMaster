@@ -9,8 +9,9 @@ const app = express();
 // connect to mongodb & listen for requests
 const dbURL = "mongodb+srv://sangramsingh_12:test1234@nodetuts.tyreh.mongodb.net/?retryWrites=true&w=majority&appName=nodetuts";
 
+const PORT = process.env.PORT || 3000;
 mongoose.connect(dbURL)
-  .then(result => app.listen(3000))
+  .then(result => app.listen(PORT, () => console.log(`Server running on port ${PORT}`)))
   .catch(err => console.log(err));
 
 // register view engine
