@@ -1,15 +1,17 @@
 {
   "name": "blogmaster",
   "version": "1.0.0",
-  "main": "app.js",
+  "main": "./app.js",
   "scripts": {
-    "start": "node app.js",
-    "dev": "nodemon app.js"
+    "dev": "nodemon",
+    "build": "npm install",
+    "start": "node ./app.js"
   },
   "author": "Sangram Singh Gour",
   "license": "ISC",
   "description": "A blog management application",
   "dependencies": {
+    "dotenv": "^16.4.7",
     "ejs": "^3.1.10",
     "express": "^4.21.0",
     "lodash": "^4.17.21",

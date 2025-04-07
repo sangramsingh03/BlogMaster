@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const morgan = require('morgan');
 const mongoose = require('mongoose');
@@ -7,11 +8,8 @@ const blogRoutes = require('./routes/blogRoutes');
 const app = express();
 
 // connect to mongodb & listen for requests
-const dbURL = "mongodb+srv://sangramsingh_12:test1234@nodetuts.tyreh.mongodb.net/?retryWrites=true&w=majority&appName=nodetuts";
-
-const PORT = process.env.PORT || 3000;
-mongoose.connect(dbURL)
-  .then(result => app.listen(PORT, () => console.log(`Server running on port ${PORT}`)))
+mongoose.connect(process.env.MONGODB_CONNECTION_STRING)
+  .then(result => app.listen(3000, () => console.log(`server running on localhost:3000`)))
   .catch(err => console.log(err));
 
 // register view engine
