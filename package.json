@@ -4,8 +4,8 @@
   "main": "./app.js",
   "scripts": {
     "dev": "nodemon",
-    "build": "npm install",
-    "start": "node ./app.js"
+    "build": "npm i",
+    "start": "npm i && node ./app.js"
   },
   "author": "Sangram Singh Gour",
   "license": "ISC",
