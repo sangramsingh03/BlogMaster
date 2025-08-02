@@ -83,8 +83,15 @@ h3{
 
 /* create styles */
 .create-blog form{
-  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 540px;
   margin: 0 auto;
+}
+
+.create-blog label{
+  align-self: flex-start;
 }
 .create-blog input,
 .create-blog textarea{
@@ -92,6 +99,7 @@ h3{
   width: 100%;
   margin: 10px 0;
   padding: 8px;
+  border-radius: 2rem;
 }
 .create-blog label{
   display: block;
@@ -108,6 +116,7 @@ textarea{
   border: 0;
   font-size: 1.2em;
   cursor: pointer;
+  border-radius: 1rem;
 }
 
 .about {
